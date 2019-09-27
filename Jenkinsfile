@@ -8,7 +8,7 @@ stage('Clone Stage') {
         stag('build image'){
         
          def dockerfile = 'Dockerfile'
-         def customImage = docker.build("anchestart-web:${env.BUILD_ID}", "-f ${dockerfile} ./
+         def customImage = docker.build("anchestart-web:${env.BUILD_ID}", "-f ${dockerfile} ./")
         }
     
  }
